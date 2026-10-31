@@ -8,7 +8,7 @@ def main():
     end_date = "2015-12-31"
     ticker = "DIS"
 
-    data = yf.download(ticker, start=start_date, end=end_date)
+    data = yf.download(ticker, start=start_date, end=end_date, actions=True)
     data.to_csv("/Users/sasuvanska/Library/CloudStorage/OneDrive-Personal/Project/Code/Project 1/dis_data.csv")
 
     data = open("DIS_data", mode="w")
